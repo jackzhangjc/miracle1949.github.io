@@ -62,7 +62,7 @@ a:hover,a:active{
 .mainHeader nav a:link,.mainHeader nav a:visited {
 	color: white;
 	padding: 10px 25px;
-	height:20px;
+	/*height:20px;*/
 	display: inline-block;
 }
 
@@ -179,7 +179,7 @@ a:hover,a:active{
 	color: #999;
 }
 
-.logo{
+.mylogo{
 	font-size: 40px;
 	color:black;
     margin-left: auto;
@@ -196,7 +196,7 @@ a:hover,a:active{
 	margin: 2% 2%;
 }
 @media only screen and (min-width: 150px) and (max-width:600px){
-	.body{
+	.mybody{
 		width: 90%;
 		clear:both;
 		font-size:100%;
