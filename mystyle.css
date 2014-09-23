@@ -14,9 +14,14 @@ body
 	width: 80%;
 	clear:both;
 }
-
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
 a{
 	text-decoration: none;
+	color:#ca7b37;
 }
 
 a:visited,a:link{
@@ -99,7 +104,7 @@ a:hover,a:active{
 }
 
 #mobile {
-	width:30%;
+	width:50%;
 	height: auto;
 }
 
@@ -170,7 +175,7 @@ a:hover,a:active{
 
 .post-info{
 	font-style:italic;
-	font-size: 85%;
+	font-size: 100%;
 	color: #999;
 }
 
@@ -186,8 +191,8 @@ a:hover,a:active{
 	
 }
 .ios{
-	height: 30%;
-	width: auto;
+	height: auto;
+	width: 27%;
 	margin: 2% 2%;
 }
 @media only screen and (min-width: 150px) and (max-width:600px){
