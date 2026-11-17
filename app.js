@@ -57,4 +57,19 @@ document.querySelectorAll('[data-photo]').forEach(button => {
     openMedia('A moment of magic');
   });
 });
+
+const trailer = document.querySelector('#performance-trailer');
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+if ('IntersectionObserver' in window) {
+  const trailerObserver = new IntersectionObserver(([entry], observer) => {
+    if (entry.intersectionRatio < 0.35) return;
+    observer.disconnect();
+    if (reducedMotion.matches || !trailer.paused || trailer.currentTime > 0) return;
+    trailer.play().catch(() => {
+      // The poster and native controls remain available when autoplay is blocked.
+    });
+  }, { threshold: 0.35 });
+  trailerObserver.observe(trailer);
+}
+
 document.querySelector('#year').textContent = new Date().getFullYear();
